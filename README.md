@@ -37,7 +37,17 @@ filtre = df[df["longueur"] > 10]
 print(filtre,"\n\n")
 
 
+#4) Calculer la moyenne du Pourcentage de GC
+print("**************** Calcul de la moyenne ****************")
+# Calculer le Pourcentage moyen de GC avec 3 chiffres après la virgule 
+average_GC = df["Pourcentage GC"] .mean()
+print (f"Pourcentage moyen de GC : {average_GC:.3f}%")
 
+#5) Ajouter une nouvelle colonne avec des calculs 
+print("**************** Ajout d'une nouvelle colonne ****************")
+# Ajouter une nouvelle colonne"Catégorie GC"
+df["Catégorie GC"] = df["Pourcentage GC"] .apply(lambda x:"Riche" if x >55 else "Moyen" if 45 <= x <= 55 else "faible")
+print(df, "\n\n")
 
 
 
