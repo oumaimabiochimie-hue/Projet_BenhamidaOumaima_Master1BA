@@ -67,8 +67,11 @@ print(f"écart-type de GC: {std_GC: .3f}")
 print(f"écart-type de la longueur: {std_longueur: .3f}")
 print("\n\n")
 
+# 8)Sauvegarder le DataFrame dans un fichier CSV
+print("****************Sauvgarde et chargement des données avec pandas****************")
+#Sauvgarder le DataFrame dans un fichier csv
+nom_fichier="BenhamidaOumaima_M1_BA"df.to_csv(BenhamidaOumaima_M1_B1.csv",index=False)
 
-
-
-
+print(f"le tableau final a été sauvegardé dans le fichier:{nom de fichier}")
+print("\n\n")
 
