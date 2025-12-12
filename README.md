@@ -70,7 +70,7 @@ df["nombre de G"] = df ["Séquence"].str.count("G")
 print("=================== Nombre de G ajoutés ===================")
 print(df,"\n")
 
-# 7) calculer l'écart-type du %GC et la longueurdes séquence
+# 7) Calculer l'écart-type du %GC et la longueur des séquence
 
 print("***************écart-type des donnés***************")
 
